@@ -21,3 +21,9 @@ export const Pdf: Story = {
     type: 'Pdf'
   }
 }
+
+export const ArrowDown: Story = {
+  args: {
+    type: 'ArrowDown'
+  }
+}

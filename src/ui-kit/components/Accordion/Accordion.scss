@@ -1,0 +1,58 @@
+@import "style";
+.Accordion {
+  $this: &;
+  margin-top: 18px;
+  box-shadow: none;
+
+  &-Header {
+    @include title;
+
+    &:last-child {
+      margin-top: 0;
+    }
+
+    &Icon {
+      svg {
+        transition: all $transition ease;
+        width: 16px;
+        height: 10px;
+      }
+    }
+  }
+
+  &-ContentWrapper {
+    max-height: 0;
+    overflow: hidden;
+    will-change: max-height;
+    transition: max-height 0.5s ease-in-out;
+  }
+
+  &-Content {
+    background-color: $color-white;
+    padding: 15px 0;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-top: 1px solid transparent;
+
+  }
+
+  &#{$this}__active {
+    #{$this}-HeaderIcon {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.theme-dark {
+  .Accordion {
+    &-Header {
+      background-color: $color-darkness;
+    }
+
+    &-Content {
+      background-color: $color-darkness;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@mixin title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 32px;
+  padding: 7px 15px 7px 0;
+  background-color: $color-white;
+  border-bottom: 1px solid $color-suit-gray;
+  transition: all $transition ease;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: $shadow-bottom;
+  }
+}

@@ -1,0 +1,9 @@
+@import "../style";
+
+.AccordionGroup {
+  $this: &;
+
+  #{$this}-Title {
+    @include title;
+  }
+}
