@@ -1,5 +1,4 @@
-import { Icon, Button, Accordion, AccordionGroup } from '@/ui-kit';
-import './App.scss'
+import { Accordion, AccordionGroup } from '@/ui-kit';
 
 const accordionsItems = [
   {
@@ -24,20 +23,24 @@ const accordionsItems = [
       '            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
   }
 ]
-export const App = () => {
+
+const AccordionPage = () => {
   return (
     <div>
-      <Button>Click me</Button>
-      <Icon type="Pdf"/>
+      <p>Accordion</p>
       <Accordion title="Accordion">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </Accordion>
-
+      <p>Accordion Group</p>
       <AccordionGroup title={'AccordionGroup'} items={accordionsItems} />
     </div>
   )
 }
+
+export default AccordionPage

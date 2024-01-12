@@ -1,8 +1,17 @@
-import { PropsWithChildren, FC } from 'react'
-const Layout: FC<PropsWithChildren> = ({ children }) => {
+import { MenuPanel, Header } from '@/components';
+import { Outlet } from 'react-router-dom';
+import './Layout.scss'
+const Layout = () => {
   return (
     <div className="Layout">
-      <div className="Layout-Container">{children}</div>
+      <MenuPanel />
+      <div className="Layout-Container">
+        <Header/>
+        <main>
+          <Outlet/>
+        </main>
+      </div>
+
     </div>
   )
 }
