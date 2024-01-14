@@ -1,0 +1,10 @@
+.Product {
+  display: flex;
+  align-items: flex-start;
+  padding: 5px 10px;
+
+  img {
+    aspect-ratio: 1 auto;
+    width: 20%;
+  }
+}
