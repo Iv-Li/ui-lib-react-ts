@@ -1,0 +1,58 @@
+.Modal {
+  $closeBtnWidth: 20px;
+
+  &_Header {
+    width: calc(100% - $closeBtnWidth);
+    font-size: 1.2em;
+
+    &__start {
+      text-align: start;
+    }
+
+    &__center {
+      text-align: center;
+    }
+
+    &__end {
+      text-align: end;
+    }
+
+    &__justify {
+      text-align: justify;
+    }
+  }
+
+  &_Content {
+    margin-top: 24px;
+  }
+
+  &_Footer {
+    margin-top: 32px;
+  }
+
+  &__Default {
+    padding: 40px;
+    color: $color-text;
+    border-radius: $border-radius;
+  }
+
+  &__medium {
+    max-width: 760px;
+  }
+
+  &_CloseButton {
+    width: $closeBtnWidth;
+    height: 20px;
+
+    svg {
+      fill: $color-dark-gray;
+      transition: all $transition;
+    }
+
+    &:hover {
+      svg {
+        fill: $color-suit-gray;
+      }
+    }
+  }
+}

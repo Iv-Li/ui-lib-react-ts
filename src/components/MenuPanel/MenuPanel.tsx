@@ -6,6 +6,7 @@ import './MenuPanel.scss'
 const navList = [
   ERoutes.Accordion,
   ERoutes.Button,
+  ERoutes.Modal,
   ERoutes.Select,
 ]
 export const MenuPanel = () => {

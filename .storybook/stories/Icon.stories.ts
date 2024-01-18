@@ -27,3 +27,9 @@ export const ArrowDown: Story = {
     type: 'ArrowDown'
   }
 }
+
+export const Close: Story = {
+  args: {
+    type: 'Close'
+  }
+}

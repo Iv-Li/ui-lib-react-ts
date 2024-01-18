@@ -1,16 +1,7 @@
-import Pdf from '@/ui-kit/assets/icons/pdf.svg?react'
-import ArrowDown from '@/ui-kit/assets/icons/arrow-down.svg?react'
-import { v4 as uuid } from 'uuid'
+import { icons, type IconType } from '@/ui-kit/components/Icon/types.tsx';
 import { DOMAttributes, ReactNode } from 'react';
 import cls from 'classnames'
 import './Icon.scss'
-
-export type IconType = 'Pdf' | 'ArrowDown'
-
-const icons: Map<IconType, ReactNode> = new Map([
-  ['Pdf', <Pdf key={uuid()}/>],
-  ['ArrowDown', <ArrowDown key={uuid()}/>],
-])
 
 const getIcon = (type: IconType): ReactNode => {
   return icons.get(type) as ReactNode

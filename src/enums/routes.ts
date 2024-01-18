@@ -3,5 +3,6 @@ export enum ERoutes {
 
   Accordion = "/accordion",
   Button = "/button",
+  Modal = "/modal",
   Select = "/select",
 }
